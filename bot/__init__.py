@@ -38,7 +38,11 @@ async def download(event):
                     except:
                          pass
                 except errors.UserNotParticipantError:
-                    await event.reply(f"First join to our official channel to access the bot or get the newest news about the bot\n\n@{Config.CHANNEL_USERNAME}\n\nAfter that /start the bot aging.")
+                    await event.reply(f"Primero únase a nuestro canal oficial para acceder al bot o obtener las noticias más recientes sobre el bot
+
+@Linksproa
+
+Después de eso /comenzar el envejecimiento del bot.\n\n@{Config.CHANNEL_USERNAME}\n\nLuego de Unirse Presione /start ")
                     return
             
             if event.file :
