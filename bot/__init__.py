@@ -38,11 +38,7 @@ async def download(event):
                     except:
                          pass
                 except errors.UserNotParticipantError:
-                    await event.reply(f"Primero únase a nuestro canal oficial para acceder al bot o obtener las noticias más recientes sobre el bot
-
-@Linksproa
-
-Después de eso /comenzar el envejecimiento del bot.\n\n@{Config.CHANNEL_USERNAME}\n\nLuego de Unirse Presione /start ")
+                    await event.reply(f" Primero únase a nuestro canal oficial para acceder al bot o obtener las noticias más recientes sobre el bot\n\n@{Config.CHANNEL_USERNAME}\n\nLuego de Unirse Presione /start ")
                     return
             
             if event.file :
@@ -56,7 +52,7 @@ Después de eso /comenzar el envejecimiento del bot.\n\n@{Config.CHANNEL_USERNAM
                     caption=f"@{sender.username}|[{event.chat_id}](tg://user?id={event.sender_id})/{event.message.id}")
                 id_hex = hex(msg.id)[2:]
                 id = f"{id_hex}/{get_file_name(msg)}"
-                bot_url = f"[share](t.me/{username_bot}?start={id_hex})"
+                bot_url = f"[Eliminar Archivo](t.me/{username_bot}?start={id_hex})"
                 await event.reply(f"📎 : [Enlace De Descaga]({Config.DOMAIN}/{id})\n🤖 : {bot_url}")
                 return
         
